@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* navbar */
+.logo {
+  width: 100px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.login-container {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.navbar-brand {
+  color: rgb(252, 17, 17);
+  font-weight: 600;
+}
+a.nav-link {
+  margin-right: 20px;
+  font-weight: 500;
+}
+
+a.nav-link:hover {
+  color: rgb(161, 73, 73);
+}
+
+.btn.btn-primary {
+  border: none;
+  background-color: rgb(233, 86, 86);
+  padding: 10px 28px;
+}
+
+.btn.btn-primary:hover {
+  background-color: rgb(189, 37, 37);
+}
+
+/* hero-section */
+.carousel-caption {
+  bottom: 50%;
+  transform: translate(0, 50%);
+}
+
+.carousel-item::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: black;
+  opacity: 0.4;
+}
+
+.title {
+  font-size: 50px;
+  font-weight: 600;
+  opacity: 1;
+}
+
+.title span {
+  color: rgb(252, 17, 17);
+  font-weight: 500;
+  text-align: left;
+}
+
+.hero-img {
+  width: 100%;
+  object-fit: cover;
+  height: 640px;
+  object-position: 0% 10%;
+}
+
+.profile-img {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.fa-solid {
+  color: rgb(189, 37, 37);
+  font-size: 24px;
+}
+
+/* footer */
+
+.footer-section {
+  background-color: rgb(241, 221, 221);
+}
+.footer-logo {
+  width: 100px;
+}
+
+.footer-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+@media (max-width: 991px) {
+  .title {
+    font-size: 30px;
+  }
+  .navbar-nav {
+    text-align: center;
+  }
+  .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
